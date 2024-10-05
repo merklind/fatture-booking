@@ -12,6 +12,8 @@
 resources/
 .DS_Store
 exe/
+output/
+.idea/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
