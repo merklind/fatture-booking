@@ -2,6 +2,7 @@ from pathlib import Path
 from pymupdf import open
 from logger_config import setup_logger
 from utils.path import find_all_files
+from argparser_config import setup_parser
 
 _STRING_TO_REPLACE = [
     'Suite Fiera Milano City',
@@ -59,6 +60,5 @@ def process_files(folder_path, log_handler=None, output_folder=None):
         doc.close()
 
 if __name__ == '__main__':
-    from argparser_config import setup_parser
     parsed_arg = setup_parser()
     process_files(parsed_arg.filename)
